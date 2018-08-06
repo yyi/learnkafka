@@ -20,9 +20,9 @@
         <java.version>1.7</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <kafka.version>0.9.0.1-cp1</kafka.version>
+        <kafka.version>1.1.1</kafka.version>
         <kafka.scala.version>2.11</kafka.scala.version>
-        <confluent.version>2.0.1</confluent.version>
+        <confluent.version>5.0.0</confluent.version>
         <avro.version>1.8.0</avro.version>
 
         <!-- Maven plugins versions-->
@@ -32,6 +32,7 @@
     </properties>
 
     <dependencies>
+        <!--mvn install:install-file -Dfile=kafka-avro-serializer-3.1.1.jar  -DgroupId=io.confluent  -DartifactId=kafka-avro-serializer -Dversion=3.1.1 -Dpackaging=jar-->
         <dependency>
             <groupId>io.confluent</groupId>
             <artifactId>kafka-avro-serializer</artifactId>
